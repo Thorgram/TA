@@ -91,10 +91,6 @@ function gadget:GameOver()
 end
 
 function gadget:Initialize()
-
-	if #UnitDefs > 0x3C0 then
-		Spring.GameOver({nil})
-	end
 	if tostring(Spring.GetModOptions().deathmode) == "none" then
 		gadgetHandler:RemoveGadget()
 	end

@@ -86,9 +86,7 @@ return {
 		weapondefs = {
 			armjade_laser = {
 				areaofeffect = 15,
-				avoidfriendly = false,
 				beamtime = 0.3,
-				collidefriendly = false,
 				corethickness = 0.175,
 				craterareaofeffect = 0,
 				craterboost = 0,
@@ -118,10 +116,7 @@ return {
 				damage = {
 					commanders = 70,
 					default = 140,
-					fighters = 0,
-					flak_resistant = 0,
 					subs = 5,
-					unclassed_air = 0,
 				},
 			},
 		},

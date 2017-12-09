@@ -15,6 +15,12 @@ local glReadPixels = gl.ReadPixels
 local glTexture = gl.Texture
 local minimapbrightness = nil
 
+function widget:Initialize()
+    if not WG["background_opacity_custom"] then
+		WG["background_opacity_custom"] = {0,0,0,0.5}
+	end
+end
+
 function widget:DrawScreen()
 	if minimapbrightness == nil then
 		--get 100 points on minimap
@@ -37,7 +43,7 @@ function widget:DrawScreen()
 			end
 		end
 		glTexture(false)
-		local OldMax, OldMin, NewMax, NewMin = 0.87,0.05,0.80,0.45
+		local OldMax, OldMin, NewMax, NewMin = 0.95,0.05,0.90,0.65
 		minimapbrightness=(r*0.3)+(g*0.5)+(b*0.2)
 		if minimapbrightness > OldMax then
 			Spring.Echo("nix new value found please adjust ", minimapbrightness)
@@ -53,8 +59,25 @@ function widget:DrawScreen()
 		minimapbrightness = (NewMax + NewMin) - minimapbrightness
 		--Spring.Echo("Background opacity values:",minimapbrightness)		
 
-		if WG["background_color"] == nil then
-			WG["background_color"] = minimapbrightness
+		if WG["background_opacity"] == nil then
+			WG["background_opacity"] = minimapbrightness
+			if not WG["background_opacity_custom"] then
+				WG["background_opacity_custom"] = {0,0,0,minimapbrightness}
+			end
+		end
+	end
+end
+
+function widget:GetConfigData()
+	local data = {}
+	data["background_opacity_custom"] = WG["background_opacity_custom"]
+	return data
+end
+
+function widget:SetConfigData(data) 
+	if (data ~= nil) then
+		if ( data["background_opacity_custom"] ~= nil ) then
+			WG["background_opacity_custom"] = data["background_opacity_custom"]
 		end
 	end
 end

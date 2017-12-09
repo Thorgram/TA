@@ -15,7 +15,7 @@ return {
 		canpatrol = true,
 		canstop = 1,
 		cantbetransported = true,
-		category = "ALL HUGE MOBILE NOTDEFENSE NOTHOVERNOTVTOL NOTSUB NOTSUBNOTSHIP NOTVTOL WEAPON SURFACE",
+		category = "ALL HUGE MOBILE NOTDEFENSE NOTHOVERNOTVTOL NOTSUB NOTSUBNOTSHIP NOTVTOL WEAPON SURFACE UNDERWATER",
 		collisionvolumeoffsets = "0 -10 0",
 		collisionvolumescales = "56 50 80",
 		collisionvolumetype = "box",
@@ -58,7 +58,7 @@ return {
 		turnrate = 310,
 		unitname = "armmcv",
 		customparams = {
-			faction = "CORE",
+			faction = "ARM",
 		},
 		featuredefs = {
 			dead = {

@@ -1,7 +1,7 @@
 return {
 	armuwadves = {
 		buildangle = 8192,
-		buildcostenergy = 10767,
+		buildcostenergy = 14760,
 		buildcostmetal = 825,
 		builder = false,
 		buildinggrounddecaldecayspeed = 30,
@@ -10,7 +10,7 @@ return {
 		buildinggrounddecaltype = "armuwadves_aoplane.dds",
 		buildpic = "armuwadves.dds",
 		buildtime = 20302,
-		category = "ALL NOTDEFENSE NOTHOVERNOTVTOL NOTMOBILE NOTSUB NOTSUBNOTSHIP NOTVTOL NOTWEAPON UNDERWATER",
+		category = "ALL NOTDEFENSE NOTHOVERNOTVTOL NOTMOBILE NOTSUB NOTSUBNOTSHIP NOTVTOL NOTWEAPON UNDERWATER SURFACE",
 		collisionvolumeoffsets = "0 -4 8",
 		collisionvolumescales = "62 39 62",
 		collisionvolumetype = "CylY",

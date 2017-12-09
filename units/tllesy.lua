@@ -12,7 +12,7 @@ return {
 		canmove = true,
 		canpatrol = true,
 		canstop = 1,
-		category = "ALL NOTDEFENSE NOTHOVERNOTVTOL NOTMOBILE NOTSUB NOTSUBNOTSHIP NOTVTOL NOTWEAPON PLANT UNDERWATER",
+		category = "ALL NOTDEFENSE NOTHOVERNOTVTOL NOTMOBILE NOTSUB NOTSUBNOTSHIP NOTVTOL NOTWEAPON PLANT UNDERWATER SURFACE",
 		collisionvolumeoffsets = "0 30 0",
 		collisionvolumescales = "185 128 227",
 		collisionvolumetype = "Box",
@@ -56,7 +56,7 @@ return {
 		},
 		customparams = {
 			faction = "TLL",
-			providetech = "T3 Factory",
+			providetech = "T3 Factory, T2 Factory",
 		},
 		featuredefs = {
 			dead = {

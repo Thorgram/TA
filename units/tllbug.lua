@@ -12,7 +12,7 @@ return {
 		canmove = true,
 		canpatrol = true,
 		canstop = 1,
-		category = "ALL MOBILE NOTDEFENSE NOTHOVERNOTVTOL NOTSUB NOTSUBNOTSHIP NOTVTOL TINY WEAPON SURFACE",
+		category = "ALL MOBILE NOTDEFENSE NOTHOVERNOTVTOL NOTSUB NOTSUBNOTSHIP NOTVTOL TINY WEAPON SURFACE UNDERWATER",
 		collisionvolumeoffsets = "0 -1 0",
 		collisionvolumescales = "18 10 18",
 		collisionvolumetest = 1,
@@ -144,7 +144,7 @@ return {
 				weapontype = "LaserCannon",
 				weaponvelocity = 600,
 				damage = {
-					commanders = 40,
+					commanders = 10,
 					default = 400,
 					raider_resistant = 200,
 					subs = 5,

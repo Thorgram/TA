@@ -45,17 +45,16 @@ return {
 		workertime = 850,
 		yardmap = "oooccccccooo oooccccccooo oooccccccooo oooccccccooo oooccccccooo oooccccccooo oooccccccooo oooccccccooo",
 		buildoptions = {
-			[1] = "tllhtcb",
-			[2] = "tlltelsatnk",
-			[3] = "tllmlrpc",
-			[4] = "tlldemon",
-			[5] = "tllacid",
-			[6] = "tlllongshot",
-			[7] = "anvil",
+			[1] = "tlltelsatnk",
+			[2] = "tllmlrpc",
+			[3] = "tlldemon",
+			[4] = "tllacid",
+			[5] = "tlllongshot",
+			[6] = "anvil",
 		},
 		customparams = {
 			faction = "TLL",
-			providetech = "T3 Factory",
+			providetech = "T3 Factory, T2 Factory",
 		},
 		featuredefs = {
 			dead = {
